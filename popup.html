@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es" class="no-js">
+	<head>
+		<script></script>
+		<meta charset="utf-8">
+		<title>Prismatic</title>
+		<link rel="stylesheet" href="src/css/normalize.css">
+		<link rel="stylesheet" href="src/css/chico.css">
+		<link rel="stylesheet" href="src/css/prismatic.css">
+	</head>
+	<body>
+		<section id="news" role="content">
+			<div class="ch-loading"></div>
+		</section>
+		<!-- Templates -->
+		<script type="text/template" id="tpl-new">
+			<article class="new">
+				<a href="<%= url %>">
+					<h2 class="title"><%= title %></h2>
+					<p class="description">
+						<%= text %>
+					</p>
+				</a>
+			</article>
+		</script>
+		<script type="text/template" id="tpl-login">
+			<section class="login">
+				<h1>Sign up now on Prismatic</h1>
+				<a href="http://getprismatic.com/auth/oauth_request?type=twitter" class="twitter_button_medium" target="_blank">Sign up with Twitter<div class="icon"></div></a>
+
+				<a href="http://getprismatic.com/auth/oauth_request?type=facebook" class="facebook_button_medium" target="_blank">Sign up with Facebook<div class="icon"></div></a>
+
+				<a href="http://getprismatic.com/auth/oauth_request?type=google" class="google_button_medium" target="_blank">Sign up with Google Reader<div class="icon"></div></a>
+			</section>
+		</script>
+		<script>
+			(function(a){"use strict";var b=function(){var a=document.head||document.getElementsByTagName("head")[0],b=navigator.appName.indexOf("Microsoft")===0,c=0,d,e,f;f=function(a){var c=document.createElement("script");c.src=a;c.async="async";if(b){c.defer="defer"}return c};e=function(a,b,e){if(a!==b[b.length-1]){c+=1;d(b[c],b,e);return}if(e){e()}};d=function(c,d,g){var h=f(c);if(b&&h.readyState){h.onreadystatechange=function(){if(h.readyState==="loaded"||h.readyState==="complete"){h.onreadystatechange=null;e(c,d,g)}}}else{h.onload=function(){e(c,d,g)}}a.appendChild(h)};return{me:function(a,b){if(typeof a==="string"){a=[a]}(function(a,b){d(a[c],a,b)})(a,b);return this}}}();a.give=b})(window);
+
+			give.me(["vendor/jquery.js","vendor/underscore.js","vendor/backbone.js","src/js/app.js"]);
+
+			/*var _gaq=[['_setAccount','UA-15753373-6'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));*/
+		</script>
+	</body>
+</html>

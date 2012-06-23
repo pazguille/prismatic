@@ -1,0 +1,18 @@
+{
+    "name": "Prismatic News",
+    "description": "Prismatic: Discover Relevant News on your Google Chrome",
+    "version": "0.1.1",
+    "icons": {
+        "16": "src/assets/icon16.png",
+        "48": "src/assets/icon48.png",
+        "128": "src/assets/icon128.png"
+    },
+    "permissions": [
+    	"tabs"
+	],
+    "browser_action": {
+        "default_icon": "src/assets/icon16.png",
+        "default_title": "Prismatic News",  
+        "popup": "popup.html"
+    }
+}
